@@ -3,9 +3,9 @@ class Metr:
     kato = 1
 
     def __init__(self, i):
-        if(i > Metr.ano):
+        if i > Metr.ano:
             self.i = Metr.ano
-        elif (i < Metr.kato):
+        elif i < Metr.kato:
             self.i = Metr.kato
         else:
             self.i = i
@@ -14,14 +14,14 @@ class Metr:
 
     def auxisi(self):
         print(self.i)
-        if(self.i < Metr.ano):
+        if self.i < Metr.ano:
             self.i += 1
 
     def miosi(self):
-        if(self.i > Metr.kato):
+        if self.i > Metr.kato:
             self.i -= 1
 
-    def print_metr(self):
+    def print_metr (self):
         print(self.i)
 
 # Path: object_oriented/program.py
