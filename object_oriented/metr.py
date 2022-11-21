@@ -25,7 +25,7 @@ class Metr:
         print(self.i)
 
 # Path: object_oriented/program.py
-metr1 = Metr(12)
+metr1 = Metr(int(input("Give a number: ")))
 metr1.auxisi()
 metr1.print_metr()
 metr1.miosi()
