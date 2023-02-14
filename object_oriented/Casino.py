@@ -23,7 +23,7 @@ class Casino:
         return cid in [i.cid for i in players]
         
 players = []
-for i in range(3):
+for i in range(10):
     players.append(Casino(str(input("CID= ")) , int(input("Money in= ")) , int(input("Money out= "))))
     
 for i in players:
