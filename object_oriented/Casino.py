@@ -10,11 +10,11 @@ class Casino:
         
     def win_lose(self):
         if self.money_in < self.moneyout:
-            return "Win"
+            return "Win" + " " + str(self.moneyout - self.money_in)
         elif self.money_in > self.moneyout:
-            return "Lose"
+            return "Lose" + " " + str(self.money_in - self.moneyout)
         else:
-            return "Draw"
+            return "Draw" + " " + str(self.money_in)
         
         
     @staticmethod
@@ -23,11 +23,12 @@ class Casino:
         return cid in [i.cid for i in players]
         
 players = []
-for i in range(10):
+for i in range(3):
     players.append(Casino(str(input("CID= ")) , int(input("Money in= ")) , int(input("Money out= "))))
     
 for i in players:
     print (i.cid , i.win_lose())
+
     
 print (Casino.quest())
 
