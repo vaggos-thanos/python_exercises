@@ -20,10 +20,11 @@ class CheeseCompany:
     
     @staticmethod
     def searchCheese(cheese, cheeseList):
+        state = False
         for c in cheeseList:
             if c.cheese == cheese:
-                return True
-        return False
+                state = True
+        return state
     
 cheeseList = []
 
