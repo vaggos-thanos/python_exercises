@@ -1,16 +1,15 @@
 File = open('pth.txt', 'r')
-file = File.read()
-File.close()
-file = file.split("\n")
 
 pol = []
 therm = []
-
-for i in range(len(file)):
-    if i % 2 == 0:
-        pol.append(file[i])
+i = 0
+for line in File:
+    if i % 2 == 1:
+        pol.append(line)
     else:
-        therm.append(float(file[i]))
+        therm.append(float(line))
+    i += 1
 
 print(pol)
 print(therm)
+File.close()
