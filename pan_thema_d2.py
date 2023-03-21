@@ -10,7 +10,7 @@ for i in range(len(file)):
     if i % 2 == 0:
         pol.append(file[i])
     else:
-        therm.append(file[i])
+        therm.append(float(file[i]))
 
 print(pol)
 print(therm)
